@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn how to peel a green cooking plantain in eight easy steps.">
+  <title>How to Peel a Green Plantain</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="app-shell">
+    <section class="screen welcome-screen active" id="welcome" aria-labelledby="welcome-title">
+      <div class="welcome-copy">
+        <span class="eyebrow"><span class="eyebrow-dot"></span> A SIMPLE KITCHEN GUIDE</span>
+        <h1 id="welcome-title">How to Peel a <span>Green Plantain</span></h1>
+        <p>Learn how to peel a green plantain in 8 easy steps!</p>
+        <button class="button button-primary button-large" id="startBtn" type="button">Start Tutorial <span aria-hidden="true">→</span></button>
+        <p class="welcome-note">Take your time and be careful with the knife.</p>
+      </div>
+      <div class="welcome-art">
+        <img src="images/hero.jpg" alt="Several fresh green cooking plantains on a wooden surface">
+        <span class="art-tag"><span aria-hidden="true">🌿</span> Fresh. Simple. Ready to cook.</span>
+      </div>
+      <span class="decor decor-one" aria-hidden="true"></span><span class="decor decor-two" aria-hidden="true"></span>
+    </section>
+
+    <section class="screen tutorial-screen" id="tutorial" aria-labelledby="stepTitle" aria-live="polite">
+      <header class="tutorial-header">
+        <a class="wordmark" href="#welcome" id="homeLink" aria-label="Return to welcome screen"><span class="logo-mark" aria-hidden="true">✳</span> Plantain Guide</a>
+        <span class="header-note">YOUR 8-STEP GUIDE</span>
+      </header>
+      <article class="step-card">
+        <div class="step-main">
+          <div class="step-topline"><span id="stepCount">Step 1 of 8</span><span class="progress-percent" id="progressPercent">13%</span></div>
+          <div class="progress-track" role="progressbar" aria-label="Tutorial progress" aria-valuemin="0" aria-valuemax="8" aria-valuenow="1" id="progressTrack"><span id="progressBar"></span></div>
+          <span class="connector" id="stepConnector">First</span>
+          <h2 id="stepTitle">Wash Your Hands</h2>
+          <p class="instruction" id="stepInstruction">Wash your hands before starting.</p>
+          <p class="extra-text" id="stepExtra">You must have clean hands.</p>
+          <p class="safety-note" id="safetyNote" hidden><span aria-hidden="true">⚠</span> Be careful when using the knife.</p>
+          <div class="navigation">
+            <button class="button button-secondary" id="previousBtn" type="button" disabled><span aria-hidden="true">←</span> Previous</button>
+            <button class="button button-primary" id="nextBtn" type="button">Next <span aria-hidden="true">→</span></button>
+          </div>
+        </div>
+        <figure class="step-visual">
+          <img id="stepImage" src="images/step1.jpg" alt="Hands being washed with soap and water">
+          <figcaption id="imageCaption">Start with clean hands.</figcaption>
+          <span class="image-sparkle sparkle-one" aria-hidden="true">✦</span><span class="image-sparkle sparkle-two" aria-hidden="true">✧</span>
+        </figure>
+      </article>
+      <footer class="tutorial-footer"><span><span class="footer-leaf" aria-hidden="true">❧</span> Small steps make a big difference.</span><span id="footerStep">01 / 08</span></footer>
+    </section>
+
+    <section class="screen finish-screen" id="finish" aria-labelledby="finishTitle">
+      <div class="confetti" aria-hidden="true"><span>✦</span><span>✳</span><span>✧</span><span>✦</span><span>✳</span></div>
+      <div class="finish-icon" aria-hidden="true">✓</div>
+      <p class="eyebrow">TUTORIAL COMPLETED</p>
+      <h2 id="finishTitle">Great job!</h2>
+      <p class="finish-message">You now know how to peel a green plantain!</p>
+      <img class="finish-image" src="images/step8.jpg" alt="A peeled green cooking plantain with its green peel on a cutting board">
+      <button class="button button-primary button-large" id="restartBtn" type="button">Start Again <span aria-hidden="true">↻</span></button>
+    </section>
+    <p class="page-credit">LEARN • PRACTICE • ENJOY</p>
+  </main>
+</body>
+</html>
